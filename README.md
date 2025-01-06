@@ -4,6 +4,26 @@
 
 This project analyzes Ethiopian coffee stock prices (2012–2019) using time-series techniques to uncover patterns, trends, and interdependencies. It preprocesses the data, conducts EDA, and employs a Vector Autoregression (VAR) model to forecast prices based on historical data, including opening, closing, high, and low prices. Insights aim to enhance decision-making and forecasting in the Ethiopian coffee market.  
 
+## Folder Structure
+.
+├── .github                     # Contains GitHub-specific configurations, such as workflows or issue templates.
+├── data                        # Directory for storing raw and processed data files.
+├── notebooks                   
+│   ├── Data_Preprocessing.ipynb        # Notebook for data cleaning, transformation, and preprocessing.
+│   └── Training_model_with_VAR.ipynb   # Notebook for training and evaluating the VAR model for forecasting.
+├── scripts                     # Contains Python scripts for modularized functions and reusable code.
+│   ├── __init__.py                     # Marks the folder as a package for importable modules.
+│   ├── model_training.py               # Script for training the VAR model and generating forecasts.
+│   └── preprocessing.py                # Script for preprocessing raw data into a usable format.
+├── src                        
+│   └── __init__.py                    # Marks the folder as a package for importable modules.
+├── tests                      
+│   └── __init__.py                    # Marks the folder as a package for testing modules.
+├── .gitignore                 # Specifies intentionally untracked files to ignore in the Git repository.
+├── README.md                  # Project documentation providing an overview, setup instructions, and usage details.
+└── requirements.txt           # File listing Python dependencies required for the project.
+
+
 ## Dataset Description
 - **Source:** Ethiopian coffee stock prices (2012–2019).
 - **Fields:**
@@ -129,9 +149,9 @@ This project analyzes Ethiopian coffee stock prices (2012–2019) using time-ser
    - seaborn
    - statsmodels
 
-2. **Preprocessed Data:** Provide preprocessed Ethiopian coffee stock price data as input.
+2. **Preprocessed Data:** open and run the first notebook(Data_Preprocessing.ipynb) to get the preprocessed data.
 
-3. **Execution:** Run the notebook sequentially to:
+3. **Execution:** Run the second notebook(Training_model_with_VAR.ipynb) to:
    - Train the VAR model.
    - Generate predictions.
    - Evaluate model performance.
